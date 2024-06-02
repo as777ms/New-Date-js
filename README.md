@@ -147,7 +147,11 @@ console.log("Christmas (after setting month and date):", christmas);
 >toLocaleString() 
 >Converts the Date object to a string according to the locale.`krch stringw mekna vobasta ba xamu lokal i 1 methodi objectai Метод toLocaleString() экземпляров Date возвращает строку с языковым представлением этой даты в местном часовом поясе. В реализациях с поддержкой API Intl.DateTimeFormat этот метод просто вызывает Intl.DateTimeFormat `
 
+```js
+let date1 = new Date();
 
+console.log(date1.toLocaleString('tg-Tj'));//2/6/2024 10:24:48
+```
 
 
 
