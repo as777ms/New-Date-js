@@ -159,10 +159,39 @@ console.log(date1.toLocaleString('tg-Tj'));//2/6/2024 10:24:48
 >`What is the difference between toString and toLocaleString?`
 >`It shows how toString() won't format the variable but toLocaleSting() will format it based on locale setting of the geography. It is a great help for programmer in order to avoid to write extra function to format the string or Date. toLocaleString() will take care of this.`
 ```js
-let date1 = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+let date1 = new Date();
+let options = {
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: false
+};
+console.log(date1.toLocaleString('tg-TJ', options));//Якшанбе, 2 Июн 2024 10:28:04
+```
+#### weekday: 'long': Отображает день недели полностью (например, "Понедельник").
+#### month: 'long': Отображает месяц полностью (например, "Июнь").
 
-console.log(date1.toLocaleString('ar-EG'));
-// Expected output: "٢٠‏/١٢‏/٢٠١٢ ٤:٠٠:٠٠ ص"
+```diff
++year: 'numeric', bowa raqamakiwa
+```
+
+```js
+const date1 = new Date();
+const options = {
+    weekday: 'long', // День недели полностью
+    year: 'numeric', // Год числом
+    month: 'long', // Месяц полностью
+    day: 'numeric', // День числом
+    hour: 'numeric', // Час числом
+    minute: 'numeric', // Минуты числом
+    second: 'numeric', // Секунды числом
+    hour12: false // 24-часовой формат
+};
+console.log(date1.toLocaleString('tg-TJ', options));//Якшанбе, 2 Июн 2024 10:35:41
 ```
 
 ```js
