@@ -146,6 +146,11 @@ console.log("Christmas (after setting month and date):", christmas);
 >[!TIP]
 >toLocaleString() 
 >Converts the Date object to a string according to the locale.`krch stringw mekna vobasta ba xamu lokal i 1 methodi objectai Метод toLocaleString() экземпляров Date возвращает строку с языковым представлением этой даты в местном часовом поясе. В реализациях с поддержкой API Intl.DateTimeFormat этот метод просто вызывает Intl.DateTimeFormat `
+
+
+
+
+
 >[!NOTE]
 >`What is the difference between toString and toLocaleString?`
 >`It shows how toString() won't format the variable but toLocaleSting() will format it based on locale setting of the geography. It is a great help for programmer in order to avoid to write extra function to format the string or Date. toLocaleString() will take care of this.`
